@@ -8,17 +8,16 @@
     <title>Главная страница</title>
 </head>
 <body>
-    <main class="top">
+    <main class="top center main-margin ">
         <header class="header">
             <a href="./index.html"><img src="./img/logo-light.svg" alt="logo"></a>
             <form action="#">
                 <input class="top__search" type="text" placeholder="Поиск">
             </form>
-            <nav>
+            <nav class="nav_box">
                 <a class=" link link__nav" href="./catalog.html">Каталог</a>
                 <a class="link link__nav" href="#">Корзина</a>
             </nav>
-            <hr>
         </header>
     
         <section>
@@ -28,34 +27,42 @@
         </section>
     </main>
 
-    <section class="product_box">
+    <section class="product_box center main-margin ">
         <h2 class="subtitle__productBox" >Специальные предложения</h2>
         <div class="product_content">
             <div class="product">
                 <img src="img/products/chandelier-VODA.jpg" alt="Люстра">
                 <h3 class="name_product" >Люстра VODA</h3>
                 <p class="product_description">Основание из полированной нержавеющей стали, придает оригинальный парящий эффект.</p>
-                <p class="new__price">45 000 руб.</p>
-                <p class="old__price">67 000 руб.</p>
+                <div class="product__box-price">
+                    <p class="new__price">45 000 руб.</p>
+                    <p class="old__price">67 000 руб.</p>
+                </div>
             </div>
+
             <div class="product">
                 <img src="img/products/sofa-RONALD.jpg" alt="Диван">
                 <h3 class="name_product" >Диван RONALD</h3>
                 <p class="product_description">Модель отличается простотой линий и форм, отсутствием броского декора.</p>
-                <p class="new__price">156 000 руб.</p>
-                <p class="old__price">198 000 руб.</p>
+                <div class="product__box-price">
+                    <p class="new__price">156 000 руб.</p>
+                    <p class="old__price">198 000 руб.</p>
+                </div>
             </div>
+
             <div class="product">
                 <img src="img/products/dresser-VENT.jpg" alt="Комод">
                 <h3 class="name_product" >Комод VENT</h3>
                 <p class="product_description">Европейский дуб - отличается особой прочностью и стабильностью.</p>
-                <p class="new__price">34 000 руб.</p>
-                <p class="old__price">45 000 руб.</p>
+                <div class="product__box-price">
+                    <p class="new__price">34 000 руб.</p>
+                    <p class="old__price">45 000 руб.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="product_box">
+    <section class="product_box center">
         <h2 class="subtitle__productBox" >Каталог товаров</h2>
         <div class="product_content">
             <div class="product">
@@ -64,30 +71,35 @@
                 <p class="product_description">Основание из полированной нержавеющей стали, придает оригинальный парящий эффект.</p>
                 <p class="new__price">120 000 руб.</p>
             </div>
+
             <div class="product">
                 <img src="img/products/armchair-VILORA.jpg" alt="Кресло">
                 <h3 class="name_product" >Кресло VILORA</h3>
                 <p class="product_description">Мягкое и уютное, аккуратное и стильное. Упругие подушки сиденья и приятная на ощупь ткань. </p>
                 <p class="new__price">21 000 руб.</p>
             </div>
+
             <div class="product">
                 <img src="img/products/table-MENU.jpg" alt="Стол">
                 <h3 class="name_product" >Стол MENU</h3>
                 <p class="product_description">Для того чтобы трапезничать было приятно, необходим правильный обеденный стол.</p>
                 <p class="new__price">34 000 руб.</p>
             </div>
+
             <div class="product">
                 <img src="img/products/armchair_ASKESTA.jpg" alt="Кресло">
                 <h3 class="name_product" >Кресло ASKESTA</h3>
                 <p class="product_description">Высокоэластичный пенополиуретан в «начинке» кресла надежен и долговечен</p>
                 <p class="new__price">68 000 руб.</p>
             </div>
+
             <div class="product">
                 <img src="img/products/table-NORMAN.jpg" alt="Стол">
                 <h3 class="name_product" >Стол NORMAN</h3>
                 <p class="product_description">Прекрасно переносит солнечные лучи, перепады влажности и любые осадки</p>
                 <p class="new__price">40 000 руб.</p>
             </div>
+
             <div class="product">
                 <img src="img/products/sofa-NASTAN.jpg" alt="Диван">
                 <h3 class="name_product" >Диван NASTAN</h3>
@@ -95,25 +107,35 @@
                 <p class="new__price">80 000 руб.</p>
             </div>
         </div>
-        <a class="link__catalogMiddle" href="./catalog.html">Перейти в каталог</a>
+        <a class="link__catalogMiddle main-margin" href="./catalog.html">Перейти в каталог</a>
     </section>
 
-    <footer class="footer">
+    <footer class="footer center">
         <a href="./index.html"><img src="img/logo-dark.svg" alt="logo"></a>
-        <h4 class="footer__subtitle">Меню</h4>
-        <nav>
-            <a class="link footer__link" href="./index.html">Главная</a>
-            <a class="link footer__link" href="./catalog.html">Каталог</a>
-            <a class="link footer__link" href="">Корзина</a>
-        </nav>
-        <h4 class="footer__subtitle">Контакты</h4>
-        <a class="footer__link" href="#">+7 908 800 80 80</a>
-        <a class="footer__link" href="#">help@interier.com</a>
-        <a href="https://www.instagram.com"><img src="img/inst.svg" alt="instagram"></a>
-        <a href="https://twitter.com"><img src="img/twitter.svg" alt="twitter"></a>
-        <a href="https://www.facebook.com"><img src="img/facebook.svg" alt="facebook"></a>
 
-        <form action="#">
+        <div class="footer__menu">
+            <h4 class="footer__subtitle">Меню</h4>
+            <nav class="footer__nav">
+                <a class="link footer__link" href="./index.html">Главная</a>
+                <a class="link footer__link" href="./catalog.html">Каталог</a>
+                <a class="link footer__link" href="">Корзина</a>
+            </nav>
+        </div>
+       
+        <div class="footer__contacts">
+            <h4 class="footer__subtitle">Контакты</h4>
+            <div class="contact_box">
+                <a class="footer__link" href="#">+7 908 800 80 80</a>
+                <a class="footer__link" href="#">help@interier.com</a>
+            </div>
+            <div class="social-box">
+                <a href="https://www.instagram.com"><img src="img/inst.svg" alt="instagram"></a>
+                <a href="https://twitter.com"><img src="img/twitter.svg" alt="twitter"></a>
+                <a href="https://www.facebook.com"><img src="img/facebook.svg" alt="facebook"></a>   
+            </div> 
+        </div>
+
+        <form class="form" action="#">
             <p class="form__text">Получайте наши новости и обновления</p>
             <input class="form__email" type="email" placeholder="Email Address">
             <button class="form__subscribe" type="submit">Подписаться</button>

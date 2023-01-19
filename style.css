@@ -14,6 +14,15 @@ a{
     text-decoration: none;
 }
 
+.main-margin {
+    margin-bottom: 64px;
+}
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
 .top {
     height: 735px;  
     background-image: url(img/top-bg.jpg);
@@ -45,6 +54,14 @@ a{
 
 .header {
     height: 76px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: .5px solid rgba(255, 255, 255, 0.8);
+    align-items: center;
+}
+.nav_box {
+    display: flex;
+    gap: 32px;
 }
 
 .link__nav {
@@ -60,7 +77,7 @@ a{
    text-decoration: underline; 
 }
 .main__title {
-    width: 792px;
+    width: 765px;
     margin: 64px 0 16px;
     font-style: normal;
     font-weight: 600;
@@ -87,6 +104,7 @@ a{
     color: #FFFFFF;
 }
 
+
 .subtitle__productBox {
     margin-bottom: 32px;
     font-style: normal;
@@ -98,6 +116,15 @@ a{
     color: #000000;
 }
 
+.product_content {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 32px;
+    row-gap: 56px;
+}
+.product {
+    width: 378px;
+}
 .name_product {
     margin-bottom: 8px;
     font-style: normal;
@@ -113,6 +140,11 @@ a{
     font-size: 14px;
     line-height: 17px;
     color: #888888;
+}
+
+.product__box-price {
+    display: flex;
+    gap: 32px
 }
 .new__price {
     font-style: normal;
@@ -130,7 +162,8 @@ a{
     color: #888888;
 }
 .link__catalogMiddle {
-    /* margin: 39px 0 64px;   === don't work === */
+    display: block;
+    margin-top: 40px;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -140,8 +173,12 @@ a{
 }
 
 .footer {
-    padding: 32px 120px;
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
     background: #F7F6F6;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .footer__subtitle {
@@ -152,6 +189,12 @@ a{
     line-height: 29px;
     color: #000000;
 }
+.footer__nav {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
 .footer__link{
     font-style: normal;
     font-weight: 500;
@@ -159,6 +202,23 @@ a{
     line-height: 17px;
     color: #888888;
     text-decoration: none;
+}
+
+.contact_box {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.social-box {
+    display: flex;
+    gap: 23px;
+    align-items: center;
+}
+.form {
+    display: flex;
+    flex-direction: column;
 }
 .form__text {
     margin-bottom: 16px;
@@ -169,6 +229,7 @@ a{
     color: #000000;
 }
 .form__email {
+    margin-bottom: 12px;
     width: 275px;
     height: 46px;
     padding: 0 25px;
