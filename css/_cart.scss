@@ -1,0 +1,186 @@
+.top_cart {
+    height: 400px;
+    background-image: url(../img/cart-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cart_title {
+    margin-top: 127px;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 70px;
+    color: #FFFFFF;
+}
+
+.cart_box {
+    display: flex;
+    justify-content: space-between;
+    gap: 33px;
+}
+.cart {
+    display: flex;
+    flex-direction: column;
+    &__name {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 14px;
+    }
+    &__item {
+        display: flex;
+        width: 786px;
+        justify-content: space-between;
+        border-top: .5px solid #CACDD8;
+        padding-top: 25px;
+        margin-bottom: 32px;
+        &_left {
+            display: flex;
+            gap: 32px;
+        }
+        &_text {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+        &_text h3 {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 29px;
+            color: #000000;
+        }
+        
+        &_description {
+            width: 276px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #888888;
+        }
+        &_price {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: #050505;
+        }
+        &_btn {
+            display: flex;
+            gap: 30px;
+        }
+        &_btn button {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 210%;
+            text-decoration-line: underline;
+            color: #000000;
+            border: none;
+            background-color: #FFFFFF;
+            cursor: pointer;
+        }
+        &_count {
+            outline: none;
+            width: 70px;
+            height: 50px;
+            background: #F7F6F6;
+            border: none;
+            border-radius: 6px;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 210%;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: #000000;
+            &::placeholder {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 210%;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                color: #000000; 
+            }
+        }
+    }
+    &__button {
+        display: flex;
+        gap: 7px;
+        margin-top: 50px;
+    }
+
+    &__button button {
+        width: 200px;
+        height: 37px;
+        background: #FFF;
+        border: 1px solid #000000;
+        border-radius: 50px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        color: #020202;
+        cursor: pointer;
+        &:hover {
+            background: #000;
+            color: #FFF;
+        }
+    }
+    
+}
+
+.cart__form {
+    width: 378px;
+    display: flex;
+    flex-direction: column;
+    background: #F7F6F6;
+    border-radius: 20px;
+    padding: 42px 0 0 26px;
+    & h3 {
+        text-align: center;
+        margin-bottom: 34px;
+    }
+    &_input {
+        width: 288px;
+        border: none;
+        background: #F7F6F6;
+        border-bottom: 1px solid #CACDD8;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #000000;
+        outline: none;
+    }
+    &_name {
+        margin-bottom: 40px;
+    }
+    &_tel {
+        margin-bottom: 40px;
+    }
+    &_price {
+        margin-bottom: 18px;
+        text-align: center;
+    }
+    &_button {
+        align-self: center;
+        width: 290px;
+        height: 40px;
+        border: 1px solid #040404;
+        border-radius: 20px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #000000;
+        background: #F7F6F6;
+        &:hover {
+            color: #FFF;
+            background: #000; 
+        }
+    }
+}

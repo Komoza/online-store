@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+a{
+    text-decoration: none;
+}
+
+.main-margin {
+    margin-bottom: 64px;
+}
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+/* ===== MAIN START ===== */
+.top {
+    height: 735px;  
+    background-image: url(../img/top-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.top__search {
+    width: 288px;
+    height: 41px;
+    padding: 0 32px;
+    outline: none;
+    border: 1px solid #FFFFFF;
+    border-radius: 20px;   
+    background: transparent; 
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+.top__search::placeholder {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.header {
+    height: 76px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: .5px solid rgba(255, 255, 255, 0.8);
+    align-items: center;
+}
+.nav_box {
+    display: flex;
+    gap: 32px;
+}
+
+.link__nav {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+
+}
+
+.link:hover {
+   text-decoration: underline; 
+}
+.main__title {
+    width: 765px;
+    margin: 64px 0 16px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 70px;
+    color: #FFFFFF;  
+}
+
+.main__text {
+    margin-bottom: 16px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;    
+}
+
+.link__catalog {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+}
+/* ===== MAIN END ===== */
+
+
+/* ===== FOR START ===== */
+.for__subtitle {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 59px;
+    color: #000000;
+    margin-bottom: 32px;
+}
+.for {
+    display: grid;
+    gap: 32px;
+    grid-template-columns: repeat(12, 1fr);
+}
+.for__item {
+    height: 415px;
+    grid-column: span 4;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 41px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.for__item_big {
+    grid-column: span 6;
+}
+
+.for_relax {
+    background-image: url(../img/furniture\ for/for\ relax.jpg);
+}
+
+.for_work {
+    background-image: url(../img/furniture\ for/for\ work.jpg);
+}
+
+.for_kitchen {
+    background-image: url(../img/furniture\ for/for\ kitchen.jpg);
+}
+
+.for_children {
+    background-image: url(../img/furniture\ for/for\ children.jpg);
+}
+
+.for_bath {
+    background-image: url(../img/furniture\ for/for\ bath.jpg);
+}
+
+/* ===== FOR END ===== */
+
+/* ===== PRODUCT START ===== */
+.subtitle__productBox {
+    margin-bottom: 32px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 59px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+.product_content {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 32px;
+    row-gap: 56px;
+}
+.product {
+    width: 378px;
+}
+
+.name_product {
+    margin-bottom: 8px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;   
+    color: #000000;    
+}
+.product_description {
+    margin-bottom: 12px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #888888;
+}
+
+.product__box-price {
+    display: flex;
+    gap: 32px
+}
+.new__price {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #050505;
+}
+.old__price {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    text-decoration-line: line-through;
+    color: #888888;
+}
+
+/* ===== PRODUCT END ===== */
+
+.link__catalog-middle {
+    display: block;
+    margin-top: 40px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration-line: underline;
+    color: #000000;
+}
+
+/* ===== FOOTER START ===== */
+.footer {
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 40px;
+    background: #F7F6F6;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer__content {
+    width: 792px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.footer__info {
+    display: flex;
+    gap: 130px;
+}
+.footer__subtitle {
+    margin-bottom: 12px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
+.footer__nav {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer__link{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #888888;
+    text-decoration: none;
+}
+
+.contact_box {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.social-box {
+    display: flex;
+    gap: 23px;
+    align-items: center;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+}
+.form__text {
+    margin-bottom: 16px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #000000;
+}
+.form__email {
+    margin-bottom: 12px;
+    width: 275px;
+    height: 46px;
+    padding: 0 25px;
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    border-radius: 20px;
+}
+.form__email::placeholder {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #C4C4C4;
+}
+.form__subscribe {
+    background: rgba(222, 215, 215, 0.41);
+    border: 1px solid #FFFFFF;
+    border-radius: 20px;
+    width: 275px;
+    height: 46px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+.form__subscribe:hover {
+    background: #000;
+    color: #FFF;
+}
+/* ===== FOOTER END ===== */
+
+@import 'catalog';
+@import 'cart';
