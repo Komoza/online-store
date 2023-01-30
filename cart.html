@@ -41,7 +41,7 @@
                         </div>
                     </div>
                 </div>
-                <input class="cart__item_count" type="number" min="1" placeholder="1">
+                <input class="cart__item_count" type="number" min="1" max="99" placeholder="1">
             </div>
 
             <div class="cart__item">
@@ -57,7 +57,7 @@
                         </div>
                     </div>
                 </div>
-                <input class="cart__item_count" type="number" min="1" placeholder="1">
+                <input class="cart__item_count" type="number" min="1" max="99" placeholder="1">
             </div>
 
             <div class="cart__button">
@@ -69,12 +69,10 @@
 
         <form class="cart__form" action="#">
             <h3>Оформление заказа</h3>
-            <div class="cart__form_inputs">
-                <input class="cart__form_input cart__form_name" type="text" placeholder="Имя Фамилия">
-                <input class="cart__form_input cart__form_tel" type="tel" placeholder="+ 7 904 000 80 80">
-                <input class="cart__form_input main-margin" type="text" placeholder="Адрес доставки">
-            </div>
-            <p class="cart__form_price">Итого: 128 000 руб.</p>
+            <input class="cart__form_input cart__form_name" type="text" placeholder="Имя Фамилия">
+            <input class="cart__form_input cart__form_tel" type="tel" placeholder="+ 7 904 000 80 80">
+            <input class="cart__form_input main-margin" type="text" placeholder="Адрес доставки">
+            <p class="cart__form_price">Итого: 114 000 руб.</p>
             <button type="submit" class="cart__form_button">Оформить заказ</button>
         </form>
     </section>
