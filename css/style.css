@@ -668,7 +668,10 @@ a {
   flex-direction: column;
   background: #F7F6F6;
   border-radius: 20px;
-  padding: 42px 0 0 26px;
+  padding-top: 42px;
+}
+.cart__form_inputs {
+  padding-left: 26px;
 }
 .cart__form h3 {
   text-align: center;
