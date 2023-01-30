@@ -16,11 +16,12 @@
 
 .cart_box {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
     gap: 33px;
 }
 .cart {
     display: flex;
+    width: 786px;
     flex-direction: column;
     &__name {
         display: flex;
@@ -29,7 +30,6 @@
     }
     &__item {
         display: flex;
-        width: 786px;
         justify-content: space-between;
         border-top: .5px solid #CACDD8;
         padding-top: 25px;
@@ -135,6 +135,7 @@
 
 .cart__form {
     width: 378px;
+    height: 556px;
     display: flex;
     flex-direction: column;
     background: #F7F6F6;

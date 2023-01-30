@@ -94,7 +94,7 @@ a {
 }
 
 .main__title {
-  width: 765px;
+  max-width: 765px;
   margin: 64px 0 16px;
   font-style: normal;
   font-weight: 600;
@@ -159,22 +159,37 @@ a {
 
 .for_relax {
   background-image: url(../img/furniture\ for/for\ relax.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .for_work {
   background-image: url(../img/furniture\ for/for\ work.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .for_kitchen {
   background-image: url(../img/furniture\ for/for\ kitchen.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .for_children {
   background-image: url(../img/furniture\ for/for\ children.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .for_bath {
   background-image: url(../img/furniture\ for/for\ bath.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* ===== FOR END ===== */
@@ -200,6 +215,9 @@ a {
 
 .product {
   width: 378px;
+}
+.product__image {
+  width: 100%;
 }
 
 .name_product {
@@ -509,12 +527,13 @@ a {
 
 .cart_box {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   gap: 33px;
 }
 
 .cart {
   display: flex;
+  width: 786px;
   flex-direction: column;
 }
 .cart__name {
@@ -524,7 +543,6 @@ a {
 }
 .cart__item {
   display: flex;
-  width: 786px;
   justify-content: space-between;
   border-top: 0.5px solid #CACDD8;
   padding-top: 25px;
@@ -645,6 +663,7 @@ a {
 
 .cart__form {
   width: 378px;
+  height: 556px;
   display: flex;
   flex-direction: column;
   background: #F7F6F6;
@@ -692,4 +711,38 @@ a {
 .cart__form_button:hover {
   color: #FFF;
   background: #000;
+}
+
+@media (max-width: 1199px) {
+  .center {
+    padding-left: calc(50% - 393px);
+    padding-right: calc(50% - 393px);
+  }
+  .for__item {
+    height: 265px;
+  }
+  .product_content {
+    -moz-column-gap: 29px;
+         column-gap: 29px;
+    row-gap: 38px;
+  }
+  .footer__logo {
+    display: none;
+  }
+  .cart_box {
+    gap: 0;
+  }
+  .cart__button {
+    margin-bottom: 64px;
+    margin-top: 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 833px) {
+  .center {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .product {
+    width: 345px;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -16,8 +16,8 @@ a{
 }
 
 .center {
-    padding-left: calc(50% - 600px);
-    padding-right: calc(50% - 600px);
+    padding-left: calc(50% - 1200px / 2);
+    padding-right: calc(50% - 1200px / 2);
 }
 /* ===== MAIN START ===== */
 .top {
@@ -74,7 +74,7 @@ a{
    text-decoration: underline; 
 }
 .main__title {
-    width: 765px;
+    max-width: 765px;
     margin: 64px 0 16px;
     font-style: normal;
     font-weight: 600;
@@ -136,22 +136,37 @@ a{
 
 .for_relax {
     background-image: url(../img/furniture\ for/for\ relax.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .for_work {
     background-image: url(../img/furniture\ for/for\ work.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .for_kitchen {
     background-image: url(../img/furniture\ for/for\ kitchen.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .for_children {
     background-image: url(../img/furniture\ for/for\ children.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .for_bath {
     background-image: url(../img/furniture\ for/for\ bath.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* ===== FOR END ===== */
@@ -176,6 +191,9 @@ a{
 }
 .product {
     width: 378px;
+    &__image {
+        width: 100%;
+    }
 }
 
 .name_product {
@@ -331,3 +349,4 @@ a{
 
 @import 'catalog';
 @import 'cart';
+@import 'tablet'
