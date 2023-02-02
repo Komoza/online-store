@@ -61,6 +61,10 @@ a{
     gap: 32px;
 }
 
+.header__nav_mobile {
+    display: none;
+}
+
 .link__nav {
     font-style: normal;
     font-weight: 400;
@@ -349,4 +353,5 @@ a{
 
 @import 'catalog';
 @import 'cart';
-@import 'tablet'
+@import 'tablet';
+@import 'mobile';
