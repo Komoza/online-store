@@ -775,6 +775,7 @@ a {
   .header__nav_mobile {
     display: flex;
     gap: 32px;
+    align-items: center;
   }
   .main__title {
     font-size: 48px;
