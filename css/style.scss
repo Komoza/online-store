@@ -123,6 +123,7 @@ a{
 }
 .for__item {
     height: 415px;
+    position: relative;
     grid-column: span 4;
     font-style: normal;
     font-weight: 600;
@@ -133,6 +134,28 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all .3s;
+    & p {
+        z-index: 10;
+    }
+    &:hover {
+        font-size: 42px;
+    }
+    &:hover .for_relax {
+        filter: brightness(40%);
+    }
+    &:hover .for_work {
+        filter: brightness(40%);
+    }
+    &:hover .for_kitchen {
+        filter: brightness(40%);
+    }
+    &:hover .for_children {
+        filter: brightness(40%);
+    }
+    &:hover .for_bath {
+        filter: brightness(40%);
+    }
 }
 .for__item_big {
     grid-column: span 6;
@@ -140,6 +163,9 @@ a{
 
 .for_relax {
     background-image: url(../img/furniture\ for/for\ relax.jpg);
+    width: 100%;
+    height: 100%;
+    position: absolute;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -147,6 +173,9 @@ a{
 
 .for_work {
     background-image: url(../img/furniture\ for/for\ work.jpg);
+    width: 100%;
+    height: 100%;
+    position: absolute;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -154,6 +183,9 @@ a{
 
 .for_kitchen {
     background-image: url(../img/furniture\ for/for\ kitchen.jpg);
+    width: 100%;
+    height: 100%;
+    position: absolute;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -161,6 +193,9 @@ a{
 
 .for_children {
     background-image: url(../img/furniture\ for/for\ children.jpg);
+    width: 100%;
+    height: 100%;
+    position: absolute;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -168,6 +203,9 @@ a{
 
 .for_bath {
     background-image: url(../img/furniture\ for/for\ bath.jpg);
+    width: 100%;
+    height: 100%;
+    position: absolute;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -195,8 +233,14 @@ a{
 }
 .product {
     width: 378px;
+    transition: all .3s;
+    padding: 16px;
     &__image {
         width: 100%;
+    }
+    &:hover {
+        transform: scale(1.05);  
+        box-shadow: 0 0 5px #ccc;
     }
 }
 
@@ -246,8 +290,11 @@ a{
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    text-decoration-line: underline;
-    color: #000000;
+    color: #888888;
+    &:hover {
+        text-decoration-line: underline;
+        color: #000000;
+    }
 }
 
 /* ===== FOOTER START ===== */
@@ -344,11 +391,17 @@ a{
     font-size: 14px;
     line-height: 17px;
     color: #000000;
+    transition: all .3s;
+    &:hover {
+        background: #000;
+        color: #FFF;
+    }
 }
-.form__subscribe:hover {
-    background: #000;
-    color: #FFF;
+
+.svg {
+    color: #000;
 }
+
 /* ===== FOOTER END ===== */
 
 @import 'catalog';

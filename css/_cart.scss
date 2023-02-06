@@ -34,6 +34,11 @@
         border-top: .5px solid #CACDD8;
         padding-top: 25px;
         margin-bottom: 32px;
+        transition: transform .3s;
+        &:hover {
+            transform: scale(1.05);
+        }
+
         &_left {
             display: flex;
             gap: 32px;
@@ -125,6 +130,7 @@
         font-size: 14px;
         color: #020202;
         cursor: pointer;
+        transition: all .3s;
         &:hover {
             background: #000;
             color: #FFF;
@@ -181,6 +187,7 @@
         line-height: 20px;
         color: #000000;
         background: #F7F6F6;
+        transition: all .3s;
         &:hover {
             color: #FFF;
             background: #000; 
