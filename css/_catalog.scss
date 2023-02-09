@@ -27,21 +27,24 @@
 .breadcrumbs {
     display: flex;
     &__link {
+        position: relative;
+        padding-right: 10px;
+        margin-right: 10px;
+        display: flex;
+        align-items: center;
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
         line-height: 32px;
         color: #000000;
         &:not(:last-child)::after{
-            content: '/';
-            pointer-events:none;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 32px;
-            color: #000000;
-            padding-left: 10px;
-            padding-right: 10px;
+            content: "";
+            right: 0;
+            height: 14px;
+            width: 1px;
+            background-color: #000000;
+            position: absolute;
+            transform: rotate(25deg);
         }
         &:hover {
             text-decoration: underline;

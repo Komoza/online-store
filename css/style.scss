@@ -40,6 +40,10 @@ a{
     font-size: 16px;
     line-height: 20px;
     color: #FFFFFF;
+    transition: .3s;
+    &:focus {
+        scale: 1.07;
+    }
 }
 .top__search::placeholder {
     font-style: normal;
@@ -306,6 +310,18 @@ a{
     background: #F7F6F6;
     justify-content: space-between;
     flex-wrap: wrap;
+    &__svg {
+        transition: all .3s;
+        &:hover {
+            transform: scale(1.3);
+        }
+        & path {
+            transition: all .3s;
+            &:hover {
+                fill: black;
+            }
+        }
+    }
 }
 
 .footer__content {
@@ -339,6 +355,10 @@ a{
     line-height: 17px;
     color: #888888;
     text-decoration: none;
+    transition: all .3s;
+    &_hover:hover {
+        color: #000;
+    }
 }
 
 .contact_box {
@@ -373,6 +393,7 @@ a{
     background: #FFFFFF;
     border: 1px solid #C4C4C4;
     border-radius: 20px;
+    outline: none;
 }
 .form__email::placeholder {
     font-style: normal;
@@ -397,10 +418,6 @@ a{
         background: #000;
         color: #FFF;
     }
-}
-
-.svg {
-    color: #000;
 }
 
 /* ===== FOOTER END ===== */
